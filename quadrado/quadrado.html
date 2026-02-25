@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quadrado.css">
+</head>
+<body>
+    <div class="calcular">
+        <input type="text" id="ladoQuadrado" placeholder="Digite o lado do quadrado">
+        <button id="Calcular">Calcular</button>
+
+    </div>
+    <script>
+
+        const botao =  document.getElementById('Calcular')
+
+        botao.addEventListener('click', function(){
+
+            const ladoInput = document.getElementById('ladoQuadrado')
+            const valor = ladoInput.value;
+            
+            const calcularPerimetro = valor * 4
+
+            alert("Perimetro" + calcularPerimetro)
+            
+        });
+            
+
+        
+    </script>
+
+    
+</body>
+</html>

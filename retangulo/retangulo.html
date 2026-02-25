@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="retangulo.css">
+</head>
+<body>
+
+    <div class="calcular">
+        <input type="text" id="ladoRetangulo1" placeholder="Digite o lado do retangulo">
+        <input type="text" id="ladoRetangulo2" placeholder="Digite o outro lado do retangulo">
+        <button id="Calcular">CalcularRetangulo</button>
+    </div>
+    <script>
+
+        const botao =  document.getElementById('Calcular')
+
+        botao.addEventListener('click', function(){
+
+            const ladoInput1 = document.getElementById('ladoRetangulo1')
+            const ladoInput2 = document.getElementById('ladoRetangulo2')
+
+            const valor1 = ladoInput1.value;
+            const valor2 = ladoInput2.value;
+            
+            const calcularPerimetro = (2 * valor1) + (2* valor2)
+
+            alert("Perimetro" + calcularPerimetro)
+            
+        });
+            
+
+        
+    </script>
+</body>
+</html>

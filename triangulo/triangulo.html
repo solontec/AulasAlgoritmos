@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="triangulo.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    
+    alert("Escolha qual tipo de triangulo para calcular seu perimetro!")
+
+    let escolha = prompt("Digite aqui")
+    
+
+    switch(escolha){
+        case "Equilatero":
+            
+        let lado = prompt("Digite o lado do triangulo")
+        let  calcularEquilatero = lado * 3
+
+        alert("O perimetro do equilatero é " + calcularEquilatero)
+
+        case "Isóceles": 
+
+        let lado1 = prompt("Digite o primeiro lado do triangulo isoceles")
+        let lado2 = prompt("Digite o segundo lado do triangulo isoceles")
+
+        let calcularIsoceles = (2 * lado1) + lado2
+
+        alert("O perimetro do isóceles é" + calcularIsoceles)
+
+        case "Escaleno":
+            let l1 = Number(prompt("Digite o primeiro lado do escaleno"))
+            let l2 = Number(prompt("Digite o segundo lado do escaleno"))
+            let l3 = Number(prompt("Digite o terceiro lado do escaleno"))
+
+            let calcularEscaleno = l1 + l2 + l3
+
+            alert("O perimetro so escaleno é" + calcularEscaleno)
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+        body {
+    /* Center the content vertically and horizontally on the page using Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calcular {
+    /* Style for the main container */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    width: 300px;
+}
+
+#ladoQuadrado {
+    /* Styling for the input field */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't increase width */
+    font-size: 16px;
+}
+
+#Calcular {
+    /* Styling for the button */
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Changes cursor to a hand on hover */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#Calcular:hover {
+    /* Hover effect for the button */
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
